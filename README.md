@@ -74,6 +74,15 @@ após efetuar o download desse arquivo renomeie para "client_secrets.json" e sal
 A essa altura já deve ter notado um arquivo settings.py na pasta do projeto, pois bem o configure de acordo com as suas preferências e caminhos de arquivos.
 Fique atento ao caminho do arquivo "client_secrets.json", ele deve ser real, ao executar o programa pela primeira vez será necessário aceitar o acesso a sua conta gdrive, é imprescindível que já tenha liberado nas configurações da sua conta o "Acesso a apps menos Seguros", se não o fez é bom que o faça, pois poderam ocorrer erros de permissões sem isso.
 
+# Este projeto ajudou você?
+
+Se esse projeto lhe ajudar de alguma forma, sinta-se livre para me pagar um café, kkkk...Basta apontar a câmera do seu celular para um dos qrcodes abaixo.
+
+<img src="https://github.com/cleitonleonel/pypix/blob/master/qrcode.png?raw=true" alt="QRCode Doação" width="250"/>
+
+<img src="https://github.com/cleitonleonel/pypix/blob/master/artistic.gif?raw=true" alt="QRCode Doação" width="250"/>
+
+
 ## Author
 
 Cleiton Leonel Creton ==> cleiton.leonel@gmail.com
