@@ -45,11 +45,12 @@ def rename_backup():
     final_name = dia + "_" + now
     return final_name
 
+
 BASE_DIR = os.getcwd()
 backup_name = get_file_name()
 root_path = f"backup/{today.year}/{switch(today.month)}-" \
-            f"{str(today.month).zfill(2)if len(str(today.month)) else str(today.month)}"
-dynamic_filename = f"{switch(today.month)}-{str(today.month).zfill(2)if len(str(today.month)) else str(today.month)}"
+            f"{str(today.month).zfill(2) if len(str(today.month)) else str(today.month)}"
+dynamic_filename = f"{switch(today.month)}-{str(today.month).zfill(2) if len(str(today.month)) else str(today.month)}"
 GDRIVE_CLIENT_SECRETS_JSON = os.path.join(BASE_DIR, "credenciais/cleiton/client_secrets.json")
 GDRIVE_CREDENTIALS_JSON = os.path.join(BASE_DIR, "credenciais/cleiton/credentials.json")
 GDRIVE_ROOT = {
