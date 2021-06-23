@@ -14,11 +14,11 @@ python3 main.py
 ## OBS:
 fonte: [Iperius](https://www.iperiusbackup.net/pt-br/como-habilitar-a-api-do-google-drive-e-obter-credenciais-de-cliente/)
 
-Para utilizar a api do google drive você precisa antes obter suas credenciais, para isso precisa seguir alguns passos.
+Para utilizar a api do google drive precisa antes obter as suas credenciais, para isso precisa seguir alguns passos.
 
-Este tutorial mostra como habilitar a API Google Drive para uma conta específica Google, e obter as credenciais de acesso a ser usado a partir do Iperius para fazer backups na nuvem. Na verdade, para fazer um backup online para o Google Drive primeiro é preciso habilitar algumas opções específicas.
+Este tutorial mostra como habilitar a API Google Drive para uma conta específica Google, e obter as credenciais de acesso a ser usado a partir do Iperius para fazer ‘backups’ na nuvem. Na verdade, para fazer um backup online para o Google Drive primeiro é preciso habilitar algumas opções específicas.
 
-Faça login com sua conta do Google na área reservada onde permite configurar APIs do Google, a partir deste URL: https://console.developers.google.com/apis/library
+Faça login com a sua conta do Google na área reservada onde permite configurar APIs do Google, a partir deste URL: https://console.developers.google.com/apis/library
 
 Crie um projeto a partir de "Selecione um Projeto":
 
@@ -66,13 +66,13 @@ Imediatamente, ID do cliente e Chave secreta do cliente serão mostrados à dire
 
 <img src="https://www.iperiusbackup.net/wp-content/uploads/2015/04/abilitare-le-api-google-drive-eng10.png" alt="" width="450"/>
 
-Se chegou até aqui suas credenciais já devem existir, então basta voltar ao painel e em "API & Services" selecionar "Credenciais" e no lado direito em "IDs do cliente OAuth 2.0" baixar o arquivo json com suas credenciais,
+Se chegou até aqui as suas credenciais já devem existir, então basta voltar ao painel e em "API & Services" selecionar "Credenciais" e no lado direito em "IDs do cliente OAuth 2.0" baixar o arquivo json com suas credenciais,
 após efetuar o download desse arquivo renomeie para "clients_secrets.json" e salve esse arquivo em um local bem sugestivo de preferência na mesma pasta do projeto, ele será o meio de acesso ao gdrive.
 
 ## Editando o settings:
 
-A essa altura você já deve ter notado um arquivo settings.py dentro da pasta do projeto, pois bem configure-o de acordo com suas preferências e caminhos de arquivos.
-Fique atento ao caminho do arquivo "client_secrets.json", ele deve ser real, ao executar o programa pela primeira vez será necessário aceitar o acesso a sua conta gdrive, é impressindível que já tenha liberado nas configurações de sua conta o "Acesso a apps menos Seguros", se não o fez é bom que o faça, pois poderam ocorrer erros de permissões sem isso.
+A essa altura já deve ter notado um arquivo settings.py na pasta do projeto, pois bem o configure de acordo com as suas preferências e caminhos de arquivos.
+Fique atento ao caminho do arquivo "client_secrets.json", ele deve ser real, ao executar o programa pela primeira vez será necessário aceitar o acesso a sua conta gdrive, é imprescindível que já tenha liberado nas configurações da sua conta o "Acesso a apps menos Seguros", se não o fez é bom que o faça, pois poderam ocorrer erros de permissões sem isso.
 
 ## Author
 
