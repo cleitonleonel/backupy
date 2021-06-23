@@ -12,10 +12,11 @@ python3 main.py
 ```
 
 ## OBS:
+fonte: [Iperius](https://www.iperiusbackup.net/pt-br/como-habilitar-a-api-do-google-drive-e-obter-credenciais-de-cliente/)
 
 Para utilizar a api do google drive você precisa antes obter suas credenciais, para isso precisa seguir alguns passos.
 
-Este tutorial mostra como habilitar a API Google Drive para uma conta específica Google, e obter as credenciais de acesso a ser usado a partir do Iperius para fazer backups na nuvem. Na verdade, para fazer um backup online para o Google Drive primeiro é preciso habilitar algumas opções específicas, então devendo criar uma conta no Iperius usando as credenciais fornecidas pelo Google (ID do cliente e cliente secreto).
+Este tutorial mostra como habilitar a API Google Drive para uma conta específica Google, e obter as credenciais de acesso a ser usado a partir do Iperius para fazer backups na nuvem. Na verdade, para fazer um backup online para o Google Drive primeiro é preciso habilitar algumas opções específicas.
 
 Faça login com sua conta do Google na área reservada onde permite configurar APIs do Google, a partir deste URL: https://console.developers.google.com/apis/library
 
