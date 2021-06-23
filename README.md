@@ -67,7 +67,7 @@ Imediatamente, ID do cliente e Chave secreta do cliente serão mostrados à dire
 <img src="https://www.iperiusbackup.net/wp-content/uploads/2015/04/abilitare-le-api-google-drive-eng10.png" alt="" width="450"/>
 
 Se chegou até aqui as suas credenciais já devem existir, então basta voltar ao painel e em "API & Services" selecionar "Credenciais" e no lado direito em "IDs do cliente OAuth 2.0" baixar o arquivo json com suas credenciais,
-após efetuar o download desse arquivo renomeie para "clients_secrets.json" e salve esse arquivo em um local bem sugestivo de preferência na mesma pasta do projeto, ele será o meio de acesso ao gdrive.
+após efetuar o download desse arquivo renomeie para "client_secrets.json" e salve esse arquivo em um local bem sugestivo de preferência na mesma pasta do projeto, ele será o meio de acesso ao gdrive.
 
 ## Editando o settings:
 
