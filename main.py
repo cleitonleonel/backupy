@@ -83,6 +83,13 @@ class GDriveClient(object):
             new_file.SetContentFile(file_name)
             new_file.Upload()
             print('Upload realizado com sucesso!!!')
+
+            new_file.InsertPermission({
+                'type': 'anyone',
+                'value': 'anyone',
+                'role': 'writer'
+            })
+
             new_file.FetchMetadata(fields='permissions')
             data = {
                 'file_name': new_file['title'],
