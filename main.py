@@ -63,8 +63,10 @@ class GDriveClient(object):
             if os.path.exists(file):
                 file_name = file
             else:
-                print("Nenhum backup encontrado para hoje.")
-                sys.exit()
+                print(f"Arquivo {file}, não encontrado")
+                data = {}
+                return data
+                # sys.exit()
 
             final_name = os.path.basename(file_name)
             update = self.overwrite_backup(folder_id, final_name)
@@ -232,5 +234,6 @@ if __name__ == '__main__':
     folder_ids = GDrive.verify_folder()
     for folder in folder_ids:
         create_backup = GDrive.create_backup(folder_id=folder["id"], files=folder["files"])
-        list_files = GDrive.list_backup(folder_id=folder["id"])
-        print(f'{folder["name"]}: {list_files}')
+        if create_backup:
+            list_files = GDrive.list_backup(folder_id=folder["id"])
+            print(f'{folder["name"]}: {list_files}')

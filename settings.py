@@ -46,14 +46,14 @@ def rename_backup():
 
 
 backup_name = get_file_name()
-dynamic_filename = f"{str(today.month).zfill(2) if len(str(today.month)) else str(today.month)}-{switch(today.month)}"
-dynamic_file_path = f"{today.year}/{dynamic_filename}"
+dynamic_path = f"{str(today.month).zfill(2) if len(str(today.month)) < 2 else str(today.month)}" \
+                   f"-{switch(today.month)}"
+dynamic_file_path = f"{today.year}/{dynamic_path}"
 root_path = f"backup/{dynamic_file_path}"
-
 BASE_DIR = os.getcwd()
 HOME_PATH = os.path.join(os.path.expanduser('~'), '')
-GDRIVE_CLIENT_SECRETS_JSON = os.path.join(BASE_DIR, "credenciais/dlice/client_secrets.json")
-GDRIVE_CREDENTIALS_JSON = os.path.join(BASE_DIR, "credenciais/dlice/credentials.json")
+GDRIVE_CLIENT_SECRETS_JSON = os.path.join(BASE_DIR, "credenciais/bomdemais/client_secrets.json")
+GDRIVE_CREDENTIALS_JSON = os.path.join(BASE_DIR, "credenciais/bomdemais/credentials.json")
 GDRIVE_ROOT = {
     "backups": [
         {
@@ -62,9 +62,9 @@ GDRIVE_ROOT = {
         },
         {
             "folder_path": root_path,
-            "files": [f'../01/nfe/{dynamic_file_path}/{dynamic_filename}-nfce.zip',
-                      f'../01/nfe/{dynamic_file_path}/{dynamic_filename}-nfe.zip',
-                      f'../01/nfe/{dynamic_file_path}/{dynamic_filename}-xml.zip'
+            "files": [f'../01/governo/{dynamic_file_path}/nfce_emitidas.zip',
+                      f'../01/governo/{dynamic_file_path}/nfe_emitidas.zip',
+                      f'../01/governo/{dynamic_file_path}/xml_fornecedor.zip'
                       ]
         }
     ]
